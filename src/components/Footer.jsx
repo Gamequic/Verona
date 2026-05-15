@@ -6,9 +6,7 @@ const NAV = [
 ]
 
 const SOCIAL = [
-  { label: 'Instagram', href: '#' },
-  { label: 'Facebook', href: '#' },
-  { label: 'Pinterest', href: '#' },
+  { label: 'Instagram', href: 'https://www.instagram.com/verona_academia_floral/' },
 ]
 
 export default function Footer() {
@@ -56,8 +54,8 @@ export default function Footer() {
               Encuéntranos
             </h4>
             <div className="space-y-2 mb-6">
-              <p className="font-sans text-sm text-stone-500">verona.floral@email.com</p>
-              <p className="font-sans text-sm text-stone-500">+52 555 123 4567</p>
+              <p className="font-sans text-sm text-stone-500">magenta.jrz@gmail.com</p>
+              <p className="font-sans text-sm text-stone-500">+52 656 444 2305</p>
               <p className="font-sans text-sm text-stone-500">Ciudad Juárez, Chihuahua</p>
             </div>
             <div className="flex gap-5">

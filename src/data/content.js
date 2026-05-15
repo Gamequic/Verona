@@ -65,4 +65,16 @@ export const ARRANGEMENTS = [
   },
 ]
 
-export const WA_NUM = '525512345678'
+export const CATALOG_ARREGLOS = Array.from({ length: 16 }, (_, i) => ({
+  id: `arreglo_${String(i + 1).padStart(2, '0')}`,
+  tipo: 'arreglo',
+  image: `${B}images/arreglo_${String(i + 1).padStart(2, '0')}.jpg`,
+}))
+
+export const CATALOG_RAMOS = Array.from({ length: 19 }, (_, i) => ({
+  id: `ramo_${String(i + 1).padStart(2, '0')}`,
+  tipo: 'ramo',
+  image: `${B}images/ramo_${String(i + 1).padStart(2, '0')}.jpg`,
+}))
+
+export const WA_NUM = '526564442305'

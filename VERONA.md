@@ -10,8 +10,11 @@
 ## Cliente
 Academia de arte floral con modelo híbrido: cursos (Academia) + venta de arreglos de autor (Estudio).
 
-## Contacto
-- **WhatsApp:** placeholder `525512345678` — reemplazar con número real del cliente
+## Contacto (Angel — representante del cliente)
+- **Email:** magenta.jrz@gmail.com
+- **WhatsApp/Tel:** +52 656 444 2305 (WA_NUM: `526564442305`)
+- **Instagram:** https://www.instagram.com/verona_academia_floral/
+- **Ciudad:** Ciudad Juárez, Chihuahua
 
 ## Imágenes
 Actualmente usando Unsplash como placeholder. Para reemplazar con fotos reales:
