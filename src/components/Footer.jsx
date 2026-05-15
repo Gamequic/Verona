@@ -58,7 +58,7 @@ export default function Footer() {
             <div className="space-y-2 mb-6">
               <p className="font-sans text-sm text-stone-500">verona.floral@email.com</p>
               <p className="font-sans text-sm text-stone-500">+52 555 123 4567</p>
-              <p className="font-sans text-sm text-stone-500">Ciudad de México, México</p>
+              <p className="font-sans text-sm text-stone-500">Ciudad Juárez, Chihuahua</p>
             </div>
             <div className="flex gap-5">
               {SOCIAL.map((s) => (

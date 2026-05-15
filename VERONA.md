@@ -1,8 +1,9 @@
-# Verona Academia Floral — Demo
+# Verona Academia Floral — Delivered
 
 ## Estado
-- **Tipo:** Demo
-- **Creado:** 2026-05-05
+- **Tipo:** Delivered (cliente activo)
+- **Creado:** 2026-05-05 | **Movido a Delivered:** 2026-05-15
+- **Investigación de mercado & SEO:** [MARKET_RESEARCH.md](./MARKET_RESEARCH.md) — actualizada 2026-05-15
 - **Stack:** React 18 + Vite 5 + Framer Motion 11 + Tailwind CSS 3
 - **Servidor:** `npm run dev` → http://localhost:5180
 
@@ -42,12 +43,13 @@ Logo real (image_1.png — cara de mujer con ramo + texto VERONA FLORAL STUDIO):
 ```
 src/
 ├── App.jsx
-├── data/content.js   — textos, cursos, arreglos, WA_NUM
+├── data/content.js   — textos, cursos, arreglos, catálogo, WA_NUM
 └── components/
     ├── Navbar.jsx        — sticky, hamburger mobile, menú full-screen
     ├── Hero.jsx          — split layout (texto izq, imagen der), stats, dual CTA
     ├── Academia.jsx      — 3 tarjetas de cursos, stagger animation
     ├── Estudio.jsx       — 4 productos en grid, hover overlay WhatsApp
+    ├── Catalogo.jsx      — galería real 35 fotos (16 arreglos + 19 ramos), tabs filtro
     ├── Esencia.jsx       — split imagen+texto, pillars grid
     ├── Newsletter.jsx    — suscripción email, fondo charcoal
     ├── Footer.jsx        — 3 columnas, social links
@@ -55,21 +57,28 @@ src/
 ```
 
 ## Secciones
-1. **Navbar** — logo, links, CTA "Reserva tu Curso"
+1. **Navbar** — logo, links (incluye Catálogo), CTA "Reserva tu Curso"
 2. **Hero** — imagen florista, título serif, 2 CTAs, stats row
 3. **Academia Floral** — 3 cursos (Inicial, Intermedio, Avanzado + Certificación)
 4. **Estudio de Diseño** — 4 arreglos de autor, orden por WhatsApp
-5. **Nuestra Esencia** — about us, 4 pilares de marca
-6. **Únete a la Academia** — newsletter signup
-7. **Footer** — logo, nav, contacto, social
+5. **Catálogo** — 35 fotos reales del cliente; tabs: Todos / Arreglos / Ramos
+6. **Nuestra Esencia** — about us, 4 pilares de marca
+7. **Únete a la Academia** — newsletter signup
+8. **Footer** — logo, nav, contacto, social
+
+## Catálogo de fotos reales (2026-05-15)
+- **16 arreglos** en caja/jarrón → `public/images/arreglo_01.jpg` … `arreglo_16.jpg`
+- **19 ramos** → `public/images/ramo_01.jpg` … `ramo_19.jpg`
+- Fuente: correos .eml del cliente (extraídos y ubicados en `public/images/`)
+- Sección `#catalogo` con tabs filtro: Todos / Arreglos / Ramos
 
 ## Qué necesita antes de entregar al cliente
 
 | Campo | Estado | Acción |
 |-------|--------|--------|
-| Fotos reales | ⚠️ Unsplash placeholder | Usar image_1–image_5 del cliente |
+| Fotos catálogo | ✅ 35 fotos reales | Listo |
+| Fotos hero/secciones | ⚠️ Parcial | Logo real en Navbar ✅; hero/academia aún placeholder |
 | WhatsApp | ⚠️ Placeholder | Reemplazar WA_NUM en content.js |
 | Precios | ⚠️ Estimados | Confirmar con cliente |
-| Logo SVG real | ⚠️ Texto placeholder | Insertar imagen real en Navbar + Footer |
 | Email contacto | ⚠️ Ficticio | Actualizar en Footer.jsx |
 | Ciudad | ⚠️ CDMX placeholder | Confirmar ubicación |

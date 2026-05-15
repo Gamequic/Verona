@@ -1,16 +1,265 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ═══════════════════════════════════════════════
+         TÍTULO Y DESCRIPCIÓN
+    ═══════════════════════════════════════════════ -->
+    <title>Verona Floral Studio | Cursos de Diseño Floral y Arreglos de Autor — Ciudad Juárez</title>
+    <meta name="description" content="Academia de arte floral y estudio boutique en Ciudad Juárez. Cursos presenciales de diseño floral desde nivel básico hasta certificación avanzada. Arreglos de autor con entrega a domicilio." />
+    <meta name="keywords" content="cursos diseño floral Ciudad Juárez, academia floral Juárez, arreglos florales Ciudad Juárez, taller flores Juárez, arreglos de autor Juárez, florería boutique Ciudad Juárez, curso arreglos florales Chihuahua, estudio floral Juárez, certificado diseño floral" />
+    <meta name="author" content="Verona Floral Studio" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#C96840" />
+
+    <!-- ═══════════════════════════════════════════════
+         CANONICAL
+    ═══════════════════════════════════════════════ -->
+    <link rel="canonical" href="https://veronafloreria.online/" />
+
+    <!-- ═══════════════════════════════════════════════
+         GEO / LOCAL SEO
+    ═══════════════════════════════════════════════ -->
+    <meta name="geo.region" content="MX-CHH" />
+    <meta name="geo.placename" content="Ciudad Juárez, Chihuahua" />
+    <meta name="geo.position" content="31.6904;-106.4245" />
+    <meta name="ICBM" content="31.6904, -106.4245" />
+
+    <!-- ═══════════════════════════════════════════════
+         OPEN GRAPH (Facebook, Instagram, WhatsApp)
+    ═══════════════════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Verona Floral Studio" />
+    <meta property="og:url" content="https://veronafloreria.online/" />
+    <meta property="og:title" content="Verona Floral Studio | Cursos de Diseño Floral en Ciudad Juárez" />
+    <meta property="og:description" content="Academia de arte floral y estudio boutique en Ciudad Juárez. Cursos presenciales con certificación y arreglos de autor con entrega a domicilio." />
+    <meta property="og:image" content="https://veronafloreria.online/images/hero.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Verona Floral Studio — Academia y Estudio de Diseño Floral en Ciudad Juárez" />
+    <meta property="og:locale" content="es_MX" />
+
+    <!-- ═══════════════════════════════════════════════
+         TWITTER CARD
+    ═══════════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Verona Floral Studio | Cursos de Diseño Floral en Ciudad Juárez" />
+    <meta name="twitter:description" content="Academia de arte floral y estudio boutique en Ciudad Juárez. Cursos presenciales y arreglos de autor." />
+    <meta name="twitter:image" content="https://veronafloreria.online/images/hero.png" />
+
+    <!-- ═══════════════════════════════════════════════
+         FAVICON
+    ═══════════════════════════════════════════════ -->
     <link rel="icon" type="image/jpeg" href="/images/logo.jpg" />
-    <title>Verona Academia Floral</title>
+    <link rel="apple-touch-icon" href="/images/logo.jpg" />
+
+    <!-- ═══════════════════════════════════════════════
+         PRELOAD CRITICAL ASSETS
+    ═══════════════════════════════════════════════ -->
+    <link rel="preload" as="image" href="/images/hero.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- ═══════════════════════════════════════════════
+         STRUCTURED DATA — LocalBusiness + EducationalOrganization
+    ═══════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "EducationalOrganization"],
+      "name": "Verona Floral Studio",
+      "alternateName": "Verona Academia Floral",
+      "description": "Academia de arte floral y estudio de diseño boutique en Ciudad Juárez. Ofrecemos cursos presenciales de diseño floral desde nivel básico hasta certificación avanzada, y arreglos florales de autor con entrega a domicilio.",
+      "url": "https://veronafloreria.online",
+      "logo": "https://veronafloreria.online/images/logo.jpg",
+      "image": "https://veronafloreria.online/images/hero.png",
+      "telephone": "+52-55-5123-4567",
+      "email": "verona.floral@email.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ciudad Juárez",
+        "addressRegion": "Chihuahua",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.6904,
+        "longitude": -106.4245
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ciudad Juárez"
+      },
+      "priceRange": "$$",
+      "currenciesAccepted": "MXN",
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "15:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/veronafloralstudio",
+        "https://www.facebook.com/veronafloralstudio"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cursos de Diseño Floral — Verona Academia",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Fundamentos del Arte Floral",
+              "description": "Aprende los principios del diseño floral: selección de flores, armonía de color y técnicas de corte. Ideal para principiantes apasionados por las flores.",
+              "provider": {
+                "@type": "Organization",
+                "name": "Verona Floral Studio"
+              },
+              "educationalLevel": "Básico",
+              "timeToComplete": "PT8H",
+              "numberOfCredits": 8,
+              "teaches": "Principios de diseño floral, selección de flores, armonía cromática, técnicas de corte"
+            },
+            "price": "1200",
+            "priceCurrency": "MXN",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Diseño de Arreglos de Autor",
+              "description": "Composiciones únicas con flores de temporada, estructuras avanzadas y packaging boutique. Crea piezas que cuentan una historia.",
+              "provider": {
+                "@type": "Organization",
+                "name": "Verona Floral Studio"
+              },
+              "educationalLevel": "Intermedio",
+              "timeToComplete": "PT12H",
+              "numberOfCredits": 12,
+              "teaches": "Composición floral avanzada, flores de temporada, packaging boutique, diseño de autor"
+            },
+            "price": "1800",
+            "priceCurrency": "MXN",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Arte Nupcial & Eventos",
+              "description": "Especialización en bouquets de novia, centros de mesa y decoración floral para bodas y celebraciones de alta gama.",
+              "provider": {
+                "@type": "Organization",
+                "name": "Verona Floral Studio"
+              },
+              "educationalLevel": "Avanzado",
+              "timeToComplete": "PT20H",
+              "numberOfCredits": 20,
+              "teaches": "Bouquets de novia, centros de mesa, decoración para bodas y eventos",
+              "courseCredentialBy": {
+                "@type": "EducationalOrganization",
+                "name": "Verona Floral Studio"
+              }
+            },
+            "price": "2800",
+            "priceCurrency": "MXN",
+            "availability": "https://schema.org/InStock"
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════════
+         STRUCTURED DATA — BreadcrumbList
+    ═══════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://veronafloreria.online/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Academia Floral",
+          "item": "https://veronafloreria.online/#academia"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Estudio de Diseño",
+          "item": "https://veronafloreria.online/#estudio"
+        }
+      ]
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════════
+         STRUCTURED DATA — FAQPage (captura featured snippets)
+    ═══════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué cursos de diseño floral ofrecen en Ciudad Juárez?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En Verona Floral Studio ofrecemos tres cursos presenciales en Ciudad Juárez: Fundamentos del Arte Floral (nivel básico, 8 hrs, $1,200 MXN), Diseño de Arreglos de Autor (nivel intermedio, 12 hrs, $1,800 MXN) y Arte Nupcial & Eventos (nivel avanzado con certificación, 20 hrs, $2,800 MXN). Grupos de máximo 6 estudiantes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hacen entrega de arreglos florales a domicilio en Ciudad Juárez?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, en Verona Floral Studio realizamos entrega de arreglos florales de autor a domicilio en Ciudad Juárez. Cada arreglo es una pieza única diseñada en nuestro estudio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Los cursos de diseño floral incluyen certificado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nuestro curso de nivel avanzado Arte Nupcial & Eventos incluye certificación emitida por Verona Floral Studio. Todos los cursos incluyen práctica con flores reales y materiales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito experiencia previa para tomar un curso de diseño floral?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nuestro curso Fundamentos del Arte Floral está diseñado específicamente para principiantes sin experiencia previa. Trabajamos en grupos pequeños de máximo 6 estudiantes para una atención personalizada."
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
