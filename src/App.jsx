@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Academia from './components/Academia'
 import Estudio from './components/Estudio'
+import Catalogo from './components/Catalogo'
 import Esencia from './components/Esencia'
 import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
@@ -15,6 +16,7 @@ export default function App() {
         <Hero />
         <Academia />
         <Estudio />
+        <Catalogo />
         <Esencia />
         <Newsletter />
       </main>

@@ -25,6 +25,7 @@ export default {
           DEFAULT: '#2C2018',
           light: '#4A3830',
         },
+        coral: '#C96840',
       },
     },
   },
