@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { COURSES } from '../data/content'
+import { COURSES, WA_NUM } from '../data/content'
 
 function SectionHeader({ inView }) {
   return (
@@ -38,6 +38,11 @@ function SectionHeader({ inView }) {
       </motion.p>
     </div>
   )
+}
+
+function waLink(courseTitle) {
+  const msg = encodeURIComponent(`Hola Verona! Me interesa el curso "${courseTitle}". ¿Cuándo hay disponibilidad?`)
+  return `https://wa.me/${WA_NUM}?text=${msg}`
 }
 
 function CourseCard({ course, index, sectionInView }) {
@@ -80,10 +85,12 @@ function CourseCard({ course, index, sectionInView }) {
             <div className="text-[11px] text-stone-400 font-sans mt-0.5">{course.duration}</div>
           </div>
           <a
-            href="#contacto"
+            href={waLink(course.title)}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-petal text-sm font-sans font-medium hover:gap-3 transition-all duration-200"
           >
-            Reservar
+            Reservar por WhatsApp
             <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
               <path
                 d="M3 8h10M9 4l4 4-4 4"

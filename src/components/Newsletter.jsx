@@ -1,15 +1,38 @@
 import { useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 
+const CRM_URL = import.meta.env.VITE_CRM_URL || 'https://crm.calleros.me'
+
 export default function Newsletter() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
   const [email, setEmail] = useState('')
   const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    if (email.trim()) setSent(true)
+    if (!email.trim()) return
+    setLoading(true)
+    setError('')
+    try {
+      const res = await fetch(`${CRM_URL}/api/newsletter`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email.trim(), source: 'verona' }),
+      })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        setError(data.error || 'Ocurrió un error. Intenta de nuevo.')
+      } else {
+        setSent(true)
+      }
+    } catch {
+      setError('Sin conexión. Intenta de nuevo.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -71,16 +94,18 @@ export default function Newsletter() {
                 <input
                   type="email"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => { setEmail(e.target.value); setError('') }}
                   placeholder="tu@correo.com"
                   required
-                  className="flex-1 px-5 py-3.5 bg-white/[0.07] border border-white/[0.12] text-white placeholder-white/35 text-sm font-sans focus:outline-none focus:border-petal focus:bg-white/[0.10] transition-all duration-200"
+                  disabled={loading}
+                  className="flex-1 px-5 py-3.5 bg-white/[0.07] border border-white/[0.12] text-white placeholder-white/35 text-sm font-sans focus:outline-none focus:border-petal focus:bg-white/[0.10] transition-all duration-200 disabled:opacity-50"
                 />
                 <button
                   type="submit"
-                  className="px-7 py-3.5 bg-petal text-white text-[13px] font-sans font-medium tracking-wide hover:bg-petal-dark transition-colors duration-200 whitespace-nowrap"
+                  disabled={loading}
+                  className="px-7 py-3.5 bg-petal text-white text-[13px] font-sans font-medium tracking-wide hover:bg-petal-dark transition-colors duration-200 whitespace-nowrap disabled:opacity-60"
                 >
-                  Suscribirme
+                  {loading ? 'Enviando…' : 'Suscribirme'}
                 </button>
               </motion.form>
             ) : (
@@ -94,6 +119,10 @@ export default function Newsletter() {
               </motion.div>
             )}
           </AnimatePresence>
+
+          {error && (
+            <p className="mt-3 text-sm font-sans text-red-300">{error}</p>
+          )}
         </motion.div>
       </div>
     </section>
